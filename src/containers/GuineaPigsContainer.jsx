@@ -34,23 +34,9 @@ function GuineaPigs() {
 
 
 	return (
-    <>
-      <div data-testid="guineaPigsSlideShow" id="guineaPigsSlideShow">
-        <h1>Cute Guinea Pigs</h1>
-        <img alt="Guinea Pigs Slideshow" src={src} className={currentGP === favoriteGP? "favorite" : ""}/>
-      </div>
-		  <div data-testid="guineaPigsForm" id="guineaPigsForm">	
-			  <label>Choose Your Favorite Guinea Pig:
-          <select value={favoriteGP} onChange={favoriteChangeHandler}>
-            <option value="0">Alex</option>
-            <option value="1">Izzy</option>
-            <option value="2">Brandon</option>
-            <option value="3">DJ</option>
-          </select>
-        </label>
-        <button onClick={resetFavoriteHandler}>Reset Favorite</button>
-		  </div>
-  </>
+        <>
+            <GuineaPigsSlideShow src={GUINEAPATHS} isFavorite={currentGP === favoriteGP ? true : false}/>
+        </>
   );
 }
 
