@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import GuineaPigsForm from '../components/GuineaPigsForm';
+import GuineaPigsSlideShow from '../components/GuineaPigsSlideShow';
 
 const GUINEAPATHS = [
   "https://content.codecademy.com/courses/React/react_photo-guineapig-1.jpg",
