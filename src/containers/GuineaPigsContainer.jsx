@@ -9,7 +9,7 @@ const GUINEAPATHS = [
   "https://content.codecademy.com/courses/React/react_photo-guineapig-4.jpg",
 ];
 
-function GuineaPigs() {
+function GuineaPigsContainer() {
   const [currentGP, setCurrentGP] = useState(0);
 	const [favoriteGP, setFavoriteGP] = useState(0);
 	const src = GUINEAPATHS[currentGP];
@@ -35,10 +35,10 @@ function GuineaPigs() {
 
 	return (
         <>
-            <GuineaPigsSlideShow src={GUINEAPATHS} isFavorite={currentGP === favoriteGP ? true : false}/>
+            <GuineaPigsSlideShow src={src} isFavorite={currentGP === favoriteGP ? true : false}/>
             <GuineaPigsForm favoriteGP={favoriteGP} onSelectFavorite={favoriteChangeHandler} onResetFavorite={resetFavoriteHandler}/>
         </>
   );
 }
 
-export default GuineaPigs;
+export default GuineaPigsContainer;

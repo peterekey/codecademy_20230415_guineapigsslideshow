@@ -1,7 +1,7 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-import GuineaPigs from "./components/GuineaPigs"
+import GuineaPigsContainer from "./containers/GuineaPigsContainer";
 
 const container = document.getElementById("app");
 const root = createRoot(container);
-root.render(<GuineaPigs />);
+root.render(<GuineaPigsContainer />);
