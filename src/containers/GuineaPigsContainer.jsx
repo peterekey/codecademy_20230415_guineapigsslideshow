@@ -36,6 +36,7 @@ function GuineaPigs() {
 	return (
         <>
             <GuineaPigsSlideShow src={GUINEAPATHS} isFavorite={currentGP === favoriteGP ? true : false}/>
+            <GuineaPigsForm favoriteGP={favoriteGP} onSelectFavorite={favoriteChangeHandler} onResetFavorite={resetFavoriteHandler}/>
         </>
   );
 }
